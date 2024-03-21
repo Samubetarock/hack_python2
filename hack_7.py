@@ -10,6 +10,18 @@ text: [0] output => [0]
 
 
 def fn_hack_7(s):
-    result = s
-    #...
+    result = s.copy()
+    
+    for i in range(len(result)):
+        if result[i] == "a":
+            result[i] = "1"
+        elif result[i] == "b":
+            result[i] = 2
+        elif result[i] == "c":
+            result[i] = "3"
+        elif result[i] == "d":
+            result[i] = 4
+        elif result[i] == "e":
+            result[i] = "5"
+    
     return result
